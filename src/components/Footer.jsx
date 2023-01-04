@@ -1,11 +1,27 @@
 import React from "react";
+import {
+  FaGithubSquare,
+  FaLinkedinIn,
+  FaWhatsappSquare,
+  FaEnvelopeSquare,
+} from "react-icons/fa";
 
-export function Footer() {
+const Footer = () => {
   return (
     <>
-      <div>
-        <h1>FOOTER</h1>
-      </div>
+      <footer>
+        <div>
+          <h5>Copyright © 2023 All Rights Reserved by .</h5>
+        </div>
+        <div>
+          <FaGithubSquare />
+          <FaLinkedinIn />
+          <FaWhatsappSquare />
+          <FaEnvelopeSquare />
+        </div>
+      </footer>
     </>
   );
-}
+};
+
+export default Footer;
