@@ -2,20 +2,21 @@ import React from "react";
 import { FaGithub, FaLinkedinIn, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
+  let date = new Date();
+  let year = date.getFullYear();
   return (
     <>
-      <footer className="footer fixed-bottom mb-4">
+      <footer className="footer fixed-bottom bg-light py-2">
         <div className="container">
-          <div className="row">
-            <div className="col-md-8 mx-auto text-center">
-              <div className="footer_icons mb-4 ">
-                <FaGithub className="" />
-                <FaLinkedinIn className=" " />
-                <FaWhatsapp className=" " />
-                <FaEnvelope className=" " />
-              </div>
+          <div className="row text-center align-items-center">
+            <div className="col-md-6 mx-auto ">
               <div>
-                <p>Copyright © 2023 All Rights Reserved by .</p>
+                <p>Design and Developed by |</p>
+              </div>
+            </div>
+            <div className="col-md-6 mx-auto text-center">
+              <div>
+                <p>Copyright © {year} All Rights Reserved by |</p>
               </div>
             </div>
           </div>
