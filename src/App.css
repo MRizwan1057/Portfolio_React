@@ -91,3 +91,33 @@ body {
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   cursor: pointer;
 }
+
+.myProjectCard {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  transition: all 0.3s ease;
+}
+
+.myProjectCard:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.myProjectCardBody {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.myProjectCardBody NavLink {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  transition: all 0.3s ease;
+}
+
+.myProjectCardBody NavLink:hover {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}

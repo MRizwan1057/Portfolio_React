@@ -1,22 +1,37 @@
 import React from "react";
-import { SocialIcons } from "../components/Social_Icons";
+import { ProjectCard, ProjectData } from "../components/ProjectHelper";
+// import { SocialIcons } from "../components/Social_Icons";
 
-function Projects() {
+const Projects = () => {
   return (
     <>
-      <section className="projects">
-        <div className="container my-3">
-          <div className="row text-center">
-            <div className="col-md-12">
-              <h3>Find Me On </h3>
-              <p>Feel Free to Connect with me</p>
-              <SocialIcons />
+      <div className="mb-5">
+        <h3 className="text-center">
+          <strong>Personal Projects</strong>
+        </h3>
+      </div>
+
+      <div className="container">
+        <div className="row gy-4">
+          <div className="col-md-12">
+            <div className="row  gy-5 my-5">
+              {ProjectData.map((val, ind) => {
+                return (
+                  <ProjectCard
+                    key={ind}
+                    pimg={val.pimg}
+                    pName={val.pName}
+                    pHost={val.pHost}
+                    pSkill={val.pSkill}
+                  />
+                );
+              })}
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
-}
+};
 
 export default Projects;

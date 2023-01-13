@@ -1,4 +1,6 @@
 import React from "react";
+import GitHubCalendar from "react-github-calendar";
+
 import {
   SiBootstrap,
   SiCss3,
@@ -197,4 +199,29 @@ const ProgLangs = () => {
     </>
   );
 };
-export { SkillSet, Tools, ProgLangs };
+
+const Github = () => {
+  return (
+    <>
+      <div className="container my-5">
+        <div className="row text-center mx-auto my-3">
+          <div className="col-md-12 ">
+            <h3>Days I Code</h3>
+          </div>
+        </div>
+        <div className="row text-center align-items-center mx-auto my-5">
+          <div className="col-md-8 mx-auto">
+            <GitHubCalendar
+              username="MRizwan1057"
+              blockSize={15}
+              blockMargin={5}
+              color="rgb(255, 69, 0)"
+              fontSize={16}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+export { SkillSet, Tools, ProgLangs, Github };

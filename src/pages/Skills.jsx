@@ -1,15 +1,17 @@
 import React from "react";
-import { ProgLangs, SkillSet, Tools } from "../components/SkillHelpers";
+
+import { Github, ProgLangs, SkillSet, Tools } from "../components/SkillHelpers";
 
 function Skills() {
   return (
     <>
-      <section className="home">
+      {/* <section className="home">
         <div className="container my-3"></div>
-      </section>
+      </section> */}
       <SkillSet />
       <Tools />
       <ProgLangs />
+      <Github />
     </>
   );
 }
