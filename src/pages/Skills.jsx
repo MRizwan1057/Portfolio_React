@@ -1,6 +1,5 @@
 import React from "react";
-import { ProgLangs, SkillSet } from "../components/SkillHelpers";
-import Tools from "../components/Tools";
+import { ProgLangs, SkillSet, Tools } from "../components/SkillHelpers";
 
 function Skills() {
   return (

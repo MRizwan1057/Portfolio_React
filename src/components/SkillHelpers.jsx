@@ -34,28 +34,40 @@ const Tools = () => {
           </div>
           <div className="row align-items-center text-center">
             <div className="col-md-2 col-sm-4">
-              <SiVisualstudiocode />
-              <h6>VS Code</h6>
+              <div className="toolWrapper">
+                <SiVisualstudiocode />
+                <h6>VS Code</h6>
+              </div>
             </div>
             <div className="col-md-2 col-sm-4">
-              <SiGithub />
-              <h6>Github</h6>
+              <div className="toolWrapper">
+                <SiGithub />
+                <h6>Github</h6>
+              </div>
             </div>
             <div className="col-md-2 col-sm-4">
-              <SiPostman />
-              <h6>Postman</h6>
+              <div className="toolWrapper">
+                <SiPostman />
+                <h6>Postman</h6>
+              </div>
             </div>
             <div className="col-md-2 col-sm-4">
-              <SiHeroku />
-              <h6>Heruko</h6>
+              <div className="toolWrapper">
+                <SiHeroku />
+                <h6>Heruko</h6>
+              </div>
             </div>
             <div className="col-md-2 col-sm-4">
-              <SiFirebase />
-              <h6>Firebase</h6>
+              <div className="toolWrapper">
+                <SiFirebase />
+                <h6>Firebase</h6>
+              </div>
             </div>
             <div className="col-md-2 col-sm-4">
-              <SiNetlify />
-              <h6>Netlify</h6>
+              <div className="toolWrapper">
+                <SiNetlify />
+                <h6>Netlify</h6>
+              </div>
             </div>
           </div>
         </div>
@@ -155,23 +167,30 @@ const SkillSet = () => {
 const ProgLangs = () => {
   return (
     <>
-      <div className="container my-3">
+      <div className="container my-4">
         <div className="row text-center my-3">
           <div className="col-md-12">
             <h3>Programming Languages</h3>
           </div>
-
+        </div>
+        <div className="row text-center my-3">
           <div className="col-md">
-            <SiJava />
-            <h6>Java</h6>
+            <div className="plWrapper">
+              <SiJava />
+              <h6>Java</h6>
+            </div>
           </div>
           <div className="col-md">
-            <SiJavascript />
-            <h6>JavaScript</h6>
+            <div className="plWrapper">
+              <SiJavascript />
+              <h6>JavaScript</h6>
+            </div>
           </div>
           <div className="col-md">
-            <SiDart />
-            <h6>Dart</h6>
+            <div className="plWrapper">
+              <SiDart />
+              <h6>Dart</h6>
+            </div>
           </div>
         </div>
       </div>

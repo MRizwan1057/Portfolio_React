@@ -41,6 +41,8 @@ body {
   text-decoration: none;
 }
 
+.plWrapper,
+.toolWrapper,
 .skillWrapper {
   display: flex;
   flex-direction: column;
@@ -48,12 +50,16 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-
   transition: all 0.3s ease-in;
 }
-.skillWrapper svg {
+
+.skillWrapper {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.skillWrapper svg,
+.toolWrapper svg,
+.plWrapper svg {
   font-size: 1.5rem;
   color: rgb(255, 69, 0);
 }
@@ -63,5 +69,25 @@ body {
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   text-shadow: 0 4px 3px rgba(0, 0, 0, 0.4), 0 8px 13px rgba(0, 0, 0, 0.1),
     0 18px 23px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.toolWrapper {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.toolWrapper:hover {
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  cursor: pointer;
+}
+
+.plWrapper {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.plWrapper:hover {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
   cursor: pointer;
 }
