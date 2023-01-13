@@ -5,7 +5,7 @@ import { ProjectCard, ProjectData } from "../components/ProjectHelper";
 const Projects = () => {
   return (
     <>
-      <div className="mb-5">
+      <div className="my-5">
         <h3 className="text-center">
           <strong>Personal Projects</strong>
         </h3>
