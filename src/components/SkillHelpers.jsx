@@ -27,7 +27,7 @@ const Tools = () => {
     <>
       <section>
         <div className="container">
-          <div className="row mb-3">
+          <div className="row my-4">
             <div className="col-md12 text-center mx-auto">
               <h3>Tools I Use</h3>
             </div>
@@ -67,8 +67,8 @@ const Tools = () => {
 const SkillSet = () => {
   return (
     <>
-      <div className="container my-3">
-        <div className="row text-center">
+      <div className="container my-5">
+        <div className="row text-center my-4">
           <div className="col-md-12">
             <h3>Slills</h3>
           </div>
@@ -156,7 +156,7 @@ const ProgLangs = () => {
   return (
     <>
       <div className="container my-3">
-        <div className="row text-center">
+        <div className="row text-center my-3">
           <div className="col-md-12">
             <h3>Programming Languages</h3>
           </div>
