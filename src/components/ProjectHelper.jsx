@@ -4,19 +4,19 @@ import { NavLink } from "react-router-dom";
 const ProjectData = [
   {
     pimg: "https://picsum.photos/100/80",
-    pName: "1",
-    pSkill: "react",
-    pHost: "",
+    pName: "E-Commerce Site",
+    pSkill: "Mern Stacks",
+    pHost: "Heruko",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
   {
     pimg: "https://picsum.photos/100/80",
-    pName: "2",
-    pSkill: "node",
+    pName: "React Site",
+    pSkill: "React Js",
     pHost: "",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
   {
     pimg: "https://picsum.photos/100/80",
@@ -24,7 +24,7 @@ const ProjectData = [
     pSkill: "html",
     pHost: "",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
   {
     pimg: "https://picsum.photos/100/80",
@@ -32,7 +32,7 @@ const ProjectData = [
     pSkill: "css",
     pHost: "",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
   {
     pimg: "https://picsum.photos/100/80",
@@ -40,7 +40,7 @@ const ProjectData = [
     pSkill: "fire",
     pHost: "netlify",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
   {
     pimg: "https://picsum.photos/100/80",
@@ -48,7 +48,7 @@ const ProjectData = [
     pSkill: "mern",
     pHost: "",
     pGCode: "",
-    pLDemp: "",
+    pLDemo: "",
   },
 ];
 
@@ -64,21 +64,23 @@ const ProjectCard = (props) => {
           />
           <div className="card-body myProjectCardBody">
             <h4 className="card-title">{props.pName}</h4>
-            <h6 className="card-title">{props.pHost}</h6>
+            <h6 className="card-title">Hosted on : {props.pHost}</h6>
 
-            <p className="card-text">{props.pSkill}</p>
+            <p className="card-text">Skills Used : {props.pSkill}</p>
             <NavLink
               to={props.pGCode}
               className="btn  btn-outline-dark github_btn mx-2"
             >
               GitHub
             </NavLink>
-            <NavLink
-              to={props.pLDemp}
-              className="btn btn-dark-outline liveDemo_btn mx-2"
-            >
-              Live Demo
-            </NavLink>
+            {props.pLDemo && (
+              <NavLink
+                to={props.pLDemo}
+                className="btn btn-dark-outline liveDemo_btn mx-2"
+              >
+                Live Demo
+              </NavLink>
+            )}
           </div>
         </div>
       </div>
