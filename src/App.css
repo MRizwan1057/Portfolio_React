@@ -61,7 +61,24 @@ body {
 .toolWrapper svg,
 .plWrapper svg {
   font-size: 1.5rem;
-  color: rgb(255, 69, 0);
+  color: #ff3700;
+}
+
+.orange_span {
+  color: #ff3700;
+  font-weight: bold;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #ff3700;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  /* padding: 1rem; */
 }
 
 .skillWrapper:hover {

@@ -6,8 +6,8 @@ const Header = () => {
     <>
       <nav className="navbar navbar-expand-md bg-light">
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            Navbar
+          <NavLink className="navbar-brand logo" to="/">
+            Riz'1
           </NavLink>
           <button
             className="navbar-toggler"

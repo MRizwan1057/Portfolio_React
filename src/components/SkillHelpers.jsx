@@ -31,7 +31,9 @@ const Tools = () => {
         <div className="container">
           <div className="row my-4">
             <div className="col-md12 text-center mx-auto">
-              <h3>Tools I Use</h3>
+              <h3>
+                <span className="orange_span">Tools</span> I Use
+              </h3>
             </div>
           </div>
           <div className="row align-items-center text-center">
@@ -84,7 +86,10 @@ const SkillSet = () => {
       <div className="container my-5">
         <div className="row text-center my-4">
           <div className="col-md-12">
-            <h3>Slills</h3>
+            <h3>
+              Professional
+              <span className="orange_span"> Skills</span> Set
+            </h3>
           </div>
         </div>
         <div className="row text-center gy-3">
@@ -172,7 +177,9 @@ const ProgLangs = () => {
       <div className="container my-4">
         <div className="row text-center my-3">
           <div className="col-md-12">
-            <h3>Programming Languages</h3>
+            <h3>
+              <span className="orange_span"> Programming</span> Languages
+            </h3>
           </div>
         </div>
         <div className="row text-center my-3">
@@ -206,7 +213,9 @@ const Github = () => {
       <div className="container my-5">
         <div className="row text-center mx-auto my-3">
           <div className="col-md-12 ">
-            <h3>Days I Code</h3>
+            <h3>
+              Days I<span className="orange_span"> Code</span>
+            </h3>
           </div>
         </div>
         <div className="row text-center align-items-center mx-auto my-5">

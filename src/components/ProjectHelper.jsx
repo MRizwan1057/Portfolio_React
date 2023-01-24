@@ -20,7 +20,7 @@ const ProjectData = [
   },
   {
     pimg: "https://picsum.photos/100/80",
-    pName: "3",
+    pName: "Tra",
     pSkill: "html",
     pHost: "",
     pGCode: "",
