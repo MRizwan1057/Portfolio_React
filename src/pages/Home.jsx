@@ -8,7 +8,9 @@ const Home = () => {
         <div className="container my-3">
           <div className="row text-center">
             <div className="col-md-12">
-              <h3>Find Me On </h3>
+              <h3>
+                <span className="orange_span">Find</span> Me On
+              </h3>
               <p>Feel Free to Connect with me</p>
               <SocialIcons />
             </div>

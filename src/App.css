@@ -50,7 +50,7 @@ body {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease;
 }
 
 .skillWrapper {
@@ -70,15 +70,26 @@ body {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  background-color: #fff;
-  color: #ff3700;
+  background-color: #ff3700;
+  color: #fff;
   text-align: center;
   align-items: center;
   font-weight: bold;
   /* padding: 1rem; */
+}
+#navbarSupportedContent > ul > li a {
+  transition: all 0.3s ease-in;
+  font-weight: bold;
+}
+#navbarSupportedContent > ul > li a:is(:hover, :active) {
+  color: #fff;
+  background-color: #ff3700;
+  border-radius: 12px;
 }
 
 .skillWrapper:hover {
