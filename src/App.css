@@ -65,7 +65,8 @@ body {
 }
 
 .orange_span {
-  color: #ff3700;
+  /* color: #ff3700; */
+  color: #9d63df;
   font-weight: bold;
 }
 
@@ -75,12 +76,19 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 100%;
-  background-color: #ff3700;
+  background-color: #9d63df;
+  /* background-color: #ff3700; */
   color: #fff;
   text-align: center;
   align-items: center;
   font-weight: bold;
   /* padding: 1rem; */
+}
+
+.resume {
+  border: 2px solid #9d63df;
+  color: #fff;
+  border-radius: 12px;
 }
 #navbarSupportedContent > ul > li a {
   transition: all 0.3s ease-in;

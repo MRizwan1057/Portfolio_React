@@ -47,6 +47,14 @@ const Header = () => {
                   Experience
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link navbar-brand resume"
+                  to="/experience"
+                >
+                  Resume
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>
