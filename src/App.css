@@ -3,6 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* ROOT VARIABLES */
+:root {
+  --var-main-font: "Outfit";
+  --var-white-color: #fff;
+  --var-black-color: #000;
+  --var-primary-color: #003566;
+  --var-accent-color: #9d63df;
+}
+
 body {
   /* background: #d8d8d8; */
   position: relative;
