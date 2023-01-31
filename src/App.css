@@ -97,13 +97,15 @@ body {
 
 .resume {
   border: 2px solid #9d63df;
-  color: #fff;
+  /* color: #fff; */
   border-radius: 12px;
 }
+
 #navbarSupportedContent > ul > li a {
   transition: all 0.3s ease-in;
   font-weight: bold;
 }
+
 #navbarSupportedContent > ul > li a:is(:hover, :active) {
   color: #fff;
   background-color: #ff3700;

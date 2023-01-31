@@ -12,7 +12,8 @@ const Footer = () => {
             <div className="col-md-6 mx-auto ">
               <div>
                 <p>
-                  Design and Developed by |<span className="orange_span"></span>
+                  Designed and Developed by |
+                  <span className="orange_span"></span>
                 </p>
               </div>
             </div>
