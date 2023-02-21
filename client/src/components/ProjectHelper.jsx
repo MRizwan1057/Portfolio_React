@@ -5,7 +5,7 @@ const ProjectData = [
   {
     pimg: "https://picsum.photos/100/80",
     pName: "E-Commerce Site",
-    pSkill: "Mern Stacks",
+    pSkill: "Mern Stack",
     pHost: "Heruko",
     pGCode: "",
     pLDemo: "",
