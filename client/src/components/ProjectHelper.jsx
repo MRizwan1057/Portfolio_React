@@ -67,17 +67,11 @@ const ProjectCard = (props) => {
             <h6 className="card-title">Hosted on : {props.pHost}</h6>
 
             <p className="card-text">Skills Used : {props.pSkill}</p>
-            <NavLink
-              to={props.pGCode}
-              className="btn  btn-outline-dark github_btn mx-2"
-            >
+            <NavLink to={props.pGCode} className=" btn github_btn mx-2">
               GitHub
             </NavLink>
             {props.pLDemo && (
-              <NavLink
-                to={props.pLDemo}
-                className="btn btn-dark-outline liveDemo_btn mx-2"
-              >
+              <NavLink to={props.pLDemo} className="btn liveDemo_btn mx-2">
                 Live Demo
               </NavLink>
             )}
