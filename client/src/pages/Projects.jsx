@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="my-5">
         <h3 className="text-center">
           <strong>
-            Personal <span className="orange_span">Projects</span>{" "}
+            Personal <span className="orange_span">Projects</span>
           </strong>
         </h3>
       </div>

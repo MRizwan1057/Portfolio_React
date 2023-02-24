@@ -12,15 +12,10 @@ const updateUser = async (req, res, next) => {
   try {
     const udatedUser = await User.findByIdAndUpdate(
       req.params.id,
-      req.body,
-      // {
-      //   $set: {
-      //     name: req.body.name,
-      //     email: req.body.email,
-      //     password: req.body.password,
-      //   },
-      // },
-      { new: true, runValidators: true, context: "query" }
+      {
+        $set: req.body,
+      },
+      { new: true }
     );
     res.status(200).json(udatedUser);
   } catch (err) {
