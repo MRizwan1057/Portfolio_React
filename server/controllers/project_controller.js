@@ -17,9 +17,9 @@ const createProject = async (req, res) => {
 const updateProject = async (req, res) => {
   try {
     const project = await project.findById(req.params.id);
-    if (project.username === req.body.username) {
+    if (project.name === req.body.name) {
       try {
-        updatedProject = await Project.findByIdAndUpdate(
+        const updatedProject = await Project.findByIdAndUpdate(
           req.params.id,
           { $set: req.body },
           { new: true }
@@ -40,9 +40,9 @@ const updateProject = async (req, res) => {
 const removeProject = async (req, res) => {
   try {
     const project = await Project.findById(req.params.id);
-    if (project.username === req.body.username) {
+    if (project.name === req.body.name) {
       try {
-        post.delete();
+        project.delete();
         res.status(200).json("Project has been deleted...");
       } catch (error) {
         res.status(500).json(error.messages);
@@ -67,23 +67,9 @@ const getProject = async (req, res) => {
 
 // get all projects
 const getAllProject = async (req, res) => {
-  const username = req.query.user;
-  const catName = req.query.cat;
   try {
-    let posts;
-
-    if (username) {
-      posts = await Post.find({ username });
-    } else if (catName) {
-      posts = await Post.find({
-        categories: {
-          $in: [catName],
-        },
-      });
-    } else {
-      project = await Project.find();
-    }
-    res.status(200).json(posts);
+    const project = await Project.find();
+    res.status(200).json(project);
   } catch (error) {
     res.status(500).json(error.message);
   }

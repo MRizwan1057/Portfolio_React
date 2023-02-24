@@ -8,7 +8,7 @@ const {
 } = require("../controllers/project_controller");
 
 // Create a Project
-router.post("/ ", createProject);
+router.post("/", createProject);
 
 // update a Project
 router.put("/:id", updateProject);
@@ -20,6 +20,6 @@ router.delete("/:id", removeProject);
 router.get("/:id", getProject);
 
 // get all Projects
-router.get("/:id", getAllProject);
+router.get("/", getAllProject);
 
 module.exports = router;

@@ -2,7 +2,33 @@ const User = require("../models/User_Model");
 const bcrypt = require("bcrypt");
 
 // Update User
+// const user = await User.findByIdAndUpdate(req.params.id, req.body, {
+//   new: true,
+//   runValidators: true,
+//   context: 'query'
+//  })
+
 const updateUser = async (req, res, next) => {
+  try {
+    const udatedUser = await User.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      // {
+      //   $set: {
+      //     name: req.body.name,
+      //     email: req.body.email,
+      //     password: req.body.password,
+      //   },
+      // },
+      { new: true, runValidators: true, context: "query" }
+    );
+    res.status(200).json(udatedUser);
+  } catch (err) {
+    console.log(res.status(500).json(err.message));
+  }
+};
+
+const wupdateUser = async (req, res, next) => {
   if (req.body.userId === req.params.id) {
     if (req.body.password) {
       const salt = await bcrypt.genSalt(10);
@@ -26,12 +52,23 @@ const updateUser = async (req, res, next) => {
 };
 
 // Delete User
+
 const deleteUser = async (req, res, next) => {
+  try {
+    const user = await User.findByIdAndDelete({ _id: req.params.id });
+    res.status(200).json("User has been deleted...");
+  } catch (error) {
+    res.status(404).json("User Not Found");
+  }
+};
+
+// will be protected later on
+const wdeleteUser = async (req, res, next) => {
   if (req.body.userId === req.params.id) {
     try {
       const user = await User.findById(req.params.id);
       try {
-        await Post.deleteMany({ username: user.username });
+        await p.deleteMany({ username: user.username });
         await User.findByIdAndDelete(req.params.id);
         res.status(200).json("User has been deleted...");
       } catch (err) {
