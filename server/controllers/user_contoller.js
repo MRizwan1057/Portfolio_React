@@ -10,14 +10,15 @@ const bcrypt = require("bcrypt");
 
 const updateUser = async (req, res, next) => {
   try {
-    const udatedUser = await User.findByIdAndUpdate(
+    const updatedUser = await User.findByIdAndUpdate(
       req.params.id,
       {
         $set: req.body,
       },
       { new: true }
     );
-    res.status(200).json(udatedUser);
+    res.status(200).json(updatedUser);
+    console.log(udatedUser, req.params.id);
   } catch (err) {
     console.log(res.status(500).json(err.message));
   }
