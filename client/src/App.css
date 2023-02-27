@@ -17,6 +17,7 @@ body {
   /* background: #d8d8d8; */
   position: relative;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .footer_icons {
@@ -103,7 +104,7 @@ body {
 
 #navbarSupportedContent > ul > li a {
   transition: all 0.3s ease-in;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 #navbarSupportedContent > ul > li a:is(:hover, :active) {

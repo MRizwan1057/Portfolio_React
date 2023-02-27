@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
+import { useState } from "react";
 
 const ProjectData = [
   {
@@ -52,26 +54,26 @@ const ProjectData = [
   },
 ];
 
-const ProjectCard = (props) => {
+const ProjectCard = (project) => {
   return (
     <>
       <div className="col-md-4 col-10 mx-auto">
         <div className="card myProjectCard">
           <img
-            src={props.pimg}
+            src={project.pimg}
             className="img-fluid img-thumbnail mb-3"
             alt="..."
           />
           <div className="card-body myProjectCardBody">
-            <h4 className="card-title">{props.pName}</h4>
-            <h6 className="card-title">Hosted on : {props.pHost}</h6>
+            <h4 className="card-title">{project.pName}</h4>
+            <h6 className="card-title">Hosted on : {project.pHost}</h6>
 
-            <p className="card-text">Skills Used : {props.pSkill}</p>
-            <NavLink to={props.pGCode} className=" btn github_btn mx-2">
+            <p className="card-text">Skills Used : {project.pSkill}</p>
+            <NavLink to={project.pGCode} className=" btn github_btn mx-2">
               GitHub
             </NavLink>
-            {props.pLDemo && (
-              <NavLink to={props.pLDemo} className="btn liveDemo_btn mx-2">
+            {project.pLDemo && (
+              <NavLink to={project.pLDemo} className="btn liveDemo_btn mx-2">
                 Live Demo
               </NavLink>
             )}

@@ -1,8 +1,19 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { ProjectCard, ProjectData } from "../components/ProjectHelper";
 // import { SocialIcons } from "../components/Social_Icons";
 
-const Projects = () => {
+const Projects = (project) => {
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    const getProjects = async () => {
+      const res = await axios.get("http://localhost:4040/api/projects");
+      setProjects(res.data);
+      console.log(res.data);
+    };
+    getProjects();
+  }, []);
+  // console.log(project);
   return (
     <>
       <div className="my-5">
@@ -32,6 +43,8 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      {/* <Projects project={projects} /> */}
     </>
   );
 };
